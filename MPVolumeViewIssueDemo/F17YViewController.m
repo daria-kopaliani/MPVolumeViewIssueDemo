@@ -27,16 +27,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)showPlayer:(id)sender {
+- (IBAction)showVolumeView:(id)sender {
     
-    UIViewController *playerViewController = [[UIViewController alloc] init];
-    playerViewController.view.backgroundColor = [UIColor whiteColor];
     MPVolumeView *volumeView = [[MPVolumeView alloc] initWithFrame:CGRectMake(10.f, 0.f, CGRectGetWidth(self.view.frame) - 20.f, 30.f)];
     [[UISlider appearanceWhenContainedIn:[MPVolumeView class], nil] setMinimumValueImage:[UIImage imageNamed:@"icon-volumeMin"]];
     [[UISlider appearanceWhenContainedIn:[MPVolumeView class], nil] setMaximumValueImage:[UIImage imageNamed:@"icon-volumeMax"]];
     volumeView.center = CGPointMake(0.5f * CGRectGetWidth(self.view.frame), 0.5f * CGRectGetHeight(self.view.frame));
-    [playerViewController.view addSubview:volumeView];
-    [self.navigationController pushViewController:playerViewController animated:YES];
+    volumeView.showsRouteButton = NO;
+    [self.view addSubview:volumeView];
+
 }
 
 @end

@@ -17,23 +17,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diG-a1-LPt">
-                                <rect key="frame" x="210" y="234" width="181" height="132"/>
+                                <rect key="frame" x="210" y="131" width="181" height="132"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="181" id="Dhb-We-3LJ"/>
                                     <constraint firstAttribute="height" constant="132" id="krZ-iv-HIK"/>
                                 </constraints>
-                                <state key="normal" title="Show Player">
+                                <state key="normal" title="Show Volume View">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="showPlayer:" destination="2sm-x0-dU0" eventType="touchUpInside" id="9yz-tj-5Mu"/>
+                                    <action selector="showVolumeView:" destination="2sm-x0-dU0" eventType="touchUpInside" id="Y0e-1U-Uxg"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="diG-a1-LPt" secondAttribute="centerX" constant="-0.5" id="4Os-Dz-d1C"/>
-                            <constraint firstAttribute="centerY" secondItem="diG-a1-LPt" secondAttribute="centerY" id="SXt-DO-cf8"/>
+                            <constraint firstItem="diG-a1-LPt" firstAttribute="top" secondItem="cES-cI-T9S" secondAttribute="bottom" constant="67" id="Ehs-l7-5P0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="giJ-Hq-wZg"/>
